@@ -47,7 +47,11 @@
     "postcss"
   ],
   "cSpell.words": [
+    "antfu",
     "Hono",
-    "openapi"
+    "libsql",
+    "openapi",
+    "pino",
+    "typecheck"
   ]
 }

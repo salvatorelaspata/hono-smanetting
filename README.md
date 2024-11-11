@@ -2,12 +2,6 @@
 
 A starter template for building fully documented type-safe JSON APIs with Hono and Open API.
 
-> A new version of drizzle was released since the video showing this starter was made. See the [drizzle-v0.35 branch](https://github.com/w3cj/hono-open-api-starter/tree/drizzle-v0.35) and [this commit](https://github.com/w3cj/hono-open-api-starter/commit/92525ff84fb2a247c8245cc889b2320d7b3b6e2c) for the changes required to use drizzle v0.35
-
-> For a cloudflare specific template, see the [cloudflare branch](https://github.com/w3cj/hono-open-api-starter/tree/cloudflare) on this repo and the [cloudflare-drizzle-v0.35 branch](https://github.com/w3cj/hono-open-api-starter/tree/cloudflare-drizzle-v0.35)
-
-> For other deployment examples see the [hono-node-deployment-examples](https://github.com/w3cj/hono-node-deployment-examples) repo
-
 - [Hono Open API Starter](#hono-open-api-starter)
   - [Included](#included)
   - [Setup](#setup)
@@ -28,13 +22,6 @@ A starter template for building fully documented type-safe JSON APIs with Hono a
 
 ## Setup
 
-Clone this template without git history
-
-```sh
-npx degit w3cj/hono-open-api-starter my-api
-cd my-api
-```
-
 Create `.env` file
 
 ```sh
@@ -44,31 +31,31 @@ cp .env.example .env
 Install dependencies
 
 ```sh
-pnpm install
+npm run install
 ```
 
 Create sqlite db / push schema
 
 ```sh
-pnpm drizzle-kit push
+npm run drizzle-kit push
 ```
 
 Run
 
 ```sh
-pnpm dev
+npm run dev
 ```
 
 Lint
 
 ```sh
-pnpm lint
+npm run lint
 ```
 
 Test
 
 ```sh
-pnpm test
+npm run test
 ```
 
 ## Code Tour
